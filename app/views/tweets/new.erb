@@ -1,16 +1,12 @@
-<% if Helpers.is_logged_in?(session) %>
-<%= @error %>
-  <form action='/tweets' method="post">
-    Content:
-    <input type="text" name="content"><br>
-    Create Your Tweet:
+<!--<h2>Add a tweet</h2>-->
+<!--<%= @error %>	<form action="/tweets" method="POST">-->
+<!--  <form action='/tweets' method="post">	  <p>Status: <input type="text" name="content"></p>-->
+<!--    Content:	  <input type="submit" value="submit">-->
+<!--    <input type="text" name="content"><br>-->
+<!--  </form> -->
+<form action='/tweets' method="post">
+    Content:	   
+    <input type="text" name="content">
 
-    <input type="submit" name="submit" id="submit">
-
-    <input type="submit" name="submit">
-
-  </form>
-
-  <% else %>
-      <h1> You Must Be Logged in to Make Tweets </h1>
-  <% end %>
+    <input class="btn btn-primary" type="submit" value="submit">
+  </form>	
