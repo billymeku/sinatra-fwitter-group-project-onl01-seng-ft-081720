@@ -85,7 +85,7 @@ class TweetsController < ApplicationController
 #         end 
 #     end     
 
-# end	
+end	
 #   get '/tweets' do 
 #     if logged_in?
 #             @tweets = Tweet.all 
